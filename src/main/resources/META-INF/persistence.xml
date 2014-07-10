@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="persistenceUnit">
+        <class>ch.effusion.networkanalysis.domain.rdbms.Dev</class>
+        <class>ch.effusion.networkanalysis.domain.rdbms.Devnet</class>
+        <class>ch.effusion.networkanalysis.domain.rdbms.Net</class>
+        <class>ch.effusion.networkanalysis.domain.rdbms.Netta</class>
+        <class>ch.effusion.networkanalysis.domain.rdbms.Ta</class>
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:hsqldb:file:/Applications/hsqldb/data/poaj004x_v001.hsqldb"/>
+            <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbc.JDBCDriver"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+        </properties>
+    </persistence-unit>
+</persistence>
